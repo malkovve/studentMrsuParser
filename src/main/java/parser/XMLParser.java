@@ -16,6 +16,7 @@ public class XMLParser implements Parser {
 
     }
 
+//     todo дополнить реализацию, это чисто пример
     private List<? extends Object> readAddress(File file) {
         XMLInputFactory factory = XMLInputFactory.newInstance();
         XMLStreamReader parser = null;
@@ -34,7 +35,7 @@ public class XMLParser implements Parser {
                 if (!parser.hasNext()) break;
                 int event = parser.next();
                 if (event == XMLStreamConstants.START_ELEMENT) {
-//                    Дописать реализацию парсинга
+//                    todo: добавить реализацию
                 }
             }
         } catch (XMLStreamException e) {

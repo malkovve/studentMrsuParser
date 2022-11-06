@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ctRoot>>
+	<address id="1" city="Plauen" street="Blumenweg" house="94" floor="61" flatNumber= "42" />
+	<address id="2" city="Bad Segeberg" street="Blumenweg" house="25" floor="69" flatNumber= "5" />
+	<address id="3" city="Villingen-Schwenningen" street="Blumenweg" house="18" floor="59" flatNumber= "23" />
+	<address id="4" city="Weiden" street="Dorfstrasse" house="98" floor="60" flatNumber= "40" />
+	<address id="5" city="Landsberg" street="Schulstrasse" house="84" floor="86" flatNumber= "7" />
+	<address id="6" city="Neuwied" street="Bahnhofstrasse" house="56" floor="10" flatNumber= "78" />
+	<address id="7" city="Salzwedel" street="Dorfstrasse" house="39" floor="77" flatNumber= "56" />
+	<address id="8" city="Passau" street="Hauptstrasse" house="86" floor="1" flatNumber= "17" />
+	<address id="9" city="Essen" street="Hauptstrasse" house="6" floor="43" flatNumber= "21" />
+	<address id="10" city="Birkenfeld" street="Blumenweg" house="75" floor="69" flatNumber= "15" />
+	<address id="11" city="Cloppenburg" street="Blumenweg" house="75" floor="45" flatNumber= "89" />
+	<address id="12" city="Osterholz-Scharmbeck" street="Schulstrasse" house="48" floor="27" flatNumber= "25" />
+	<address id="13" city="Emden" street="Heuweg" house="30" floor="30" flatNumber= "54" />
+	<address id="14" city="Eisenach" street="Dorfstrasse" house="23" floor="10" flatNumber= "20" />
+	<address id="15" city="Coburg" street="Schulstrasse" house="69" floor="45" flatNumber= "66" />
+</ctRoot>
