@@ -7,22 +7,22 @@
 Нужно создать класс **Client** для хранения информации о клиенте. Пример класса:
 ```
 public struct Client {
-    public int id;                 // идентификатор
-    public String name;            // ФИО
-    public String personnelNumber; // персональный номер
-    public Address address;        // адресс проживания
+    id;              // идентификатор
+    name;            // ФИО
+    personnelNumber; // персональный номер
+    address;         // адресс проживания
 } 
 ```
 класс **Address** для хранения адреса проживания клиента. Пример:
 
 ```
 public struct Address {
-    public int id;           // идентификатор
-    public String city;      // город
-    public String street;    // улица
-    public int house;        // дом
-    public int floor;        // этаж
-    public int flatNumber;   // квартира
+    id;           // идентификатор
+    city;         // город
+    street;       // улица
+    house;        // дом
+    floor;        // этаж
+    flatNumber;   // квартира
 } 
 ```
 
@@ -49,14 +49,8 @@ public struct Address {
                 int event = parser.next();
                 if (event == XMLStreamConstants.START_ELEMENT) {
                     if (parser.getLocalName().equals("item")) {
-                        String id = parser.getAttributeValue(0);
-                        String city = parser.getAttributeValue(1);
-                        String street = parser.getAttributeValue(2);
-                        int house = Integer.parseInt(parser.getAttributeValue(3));
-                        int floor = Integer.parseInt(parser.getAttributeValue(4));
-                        int flatNumber = Integer.parseInt(parser.getAttributeValue(5));
-                        Address address = new Address(id, city, street, house, floor, flatNumber);
-                        addressList.add(address);
+                        Заполнить объект Address/Client и сохранить его в 
+                        соответствующую структуру, приводя поля к соответствующим типам
                     }
                 }
             }
@@ -77,3 +71,10 @@ public struct Address {
 1. Выполнить фиксацию изменений (`git commit -m "комментарий"`).
 1. Отправить содержимое ветки в свой удаленный репозиторий (`git push origin имя_ветки`).
 1. Создать пул-запрос в репозиторий группы и ждать результата
+
+
+## Дополнительное задание
+
+1. Создать собственные классы исключений.
+1. Вывести информацию по всем дублирующим записям адрессов.
+2. Подсчитать количество людей проживающих на 2, 3... этаже
