@@ -5,6 +5,7 @@ public class Address {
     private int house;        // дом
     private int floor;        // этаж
     private int flatNumber;   // квартира
+    private ArrayList <Address> addresses;
 
     public Address(int id, String city, String street, int house, int floor, int flatNumber) {
         this.id = id;
@@ -12,6 +13,8 @@ public class Address {
         this.street = street;
         this.house = house;
         this.floor = floor;
-        this.flatNumber = flatNumber;
+    }
+    public Adress (){
+        addresses = new Address();
     }
 }
