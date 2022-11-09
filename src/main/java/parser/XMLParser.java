@@ -36,6 +36,7 @@ public class XMLParser implements Parser {
                 int event = parser.next();
                 if (event == XMLStreamConstants.START_ELEMENT) {
 //                    todo: добавить реализацию
+                    Adress adress = new Address();
                 }
             }
         } catch (XMLStreamException e) {
