@@ -34,9 +34,9 @@ public class XMLParser implements Parser {
                 assert parser != null;
                 if (!parser.hasNext()) break;
                 int event = parser.next();
+                Adress adresses = new Address();
                 if (event == XMLStreamConstants.START_ELEMENT) {
 //                    todo: добавить реализацию
-                    Adress adress = new Address();
                 }
             }
         } catch (XMLStreamException e) {
