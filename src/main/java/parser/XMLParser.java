@@ -54,7 +54,8 @@ public class XMLParser implements Parser {
                         String name = parser.getAttributeValue(1);
                         int personalNumber = Integer.parseInt(parser.getAttributeValue(2));
                         int addressId = Integer.parseInt(parser.getAttributeValue(3));
-                        Client client = new Client(id, name, personalNumber, addressId);
+                        Address address = addresses.get(addressId);
+                        Client client = new Client(id, name, personalNumber, address);
                         clients.add(client);
                     }
                 }
