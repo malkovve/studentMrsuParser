@@ -21,7 +21,7 @@ public class XMLParser implements Parser {
     }
 
     //     todo дополнить реализацию, это чисто пример
-    private List<? extends Object> readAddress(File file) {
+    private List<?> readAddress(File file) {
         XMLInputFactory factory = XMLInputFactory.newInstance();
         XMLStreamReader parser = null;
 
