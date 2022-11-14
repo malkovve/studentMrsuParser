@@ -1,14 +1,16 @@
+package parser;
+
 public class Client {
     private int id;
     private String name;
     private int personalNumber;
-    private String address;
+    private int addressId;
 
-    public Client(int id, String name, int personalNumber, String address) {
+    public Client(int id, String name, int personalNumber, int addressId) {
         this.id = id;
         this.name = name;
         this.personalNumber = personalNumber;
-        this.address = address;
+        this.addressId = addressId;
     }
 
 }

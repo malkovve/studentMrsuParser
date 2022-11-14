@@ -1,4 +1,7 @@
 package parser;
+
+import java.util.ArrayList;
+
 public class Address {
     private int id;           // идентификатор
     private String city;         // город
@@ -6,7 +9,6 @@ public class Address {
     private int house;        // дом
     private int floor;        // этаж
     private int flatNumber;   // квартира
-    private ArrayList<Address> addresses;
 
     public Address(int id, String city, String street, int house, int floor, int flatNumber) {
         this.id = id;
@@ -16,7 +18,4 @@ public class Address {
         this.floor = floor;
     }
 
-    public Adress() {
-        addresses = new Address();
-    }
 }
