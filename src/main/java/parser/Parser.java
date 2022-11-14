@@ -5,7 +5,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 public interface Parser {
-    void parse(File file) throws FileNotFoundException, XMLStreamException;
+    void parse(File file) throws FileNotFoundException, XMLStreamException{
+
+    }
 }
 
 

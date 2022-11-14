@@ -1,3 +1,4 @@
+package parser;
 public class Address {
     private int id;           // идентификатор
     private String city;         // город
