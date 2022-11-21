@@ -57,9 +57,9 @@ public class XMLParser /*implements Parser*/ {
                     if (parser.getLocalName().equals("client")) {
                         int id = Integer.parseInt(parser.getAttributeValue(0));
                         String name = parser.getAttributeValue(1);
-                        int personalNumber = Integer.parseInt(parser.getAttributeValue(2));
+                        String personalNumber = parser.getAttributeValue(2);
                         int addressId = Integer.parseInt(parser.getAttributeValue(3));
-                        Address address = addresses.get(addressId);
+                        Address address = addresses.get(addressId - 1);
                         Client client = new Client(id, name, personalNumber, address);
                         clients.add(client);
                     }
