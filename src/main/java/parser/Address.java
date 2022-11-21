@@ -19,6 +19,10 @@ public class Address {
         this.flatNumber = flatNumber;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return "city='" + city + '\'' +

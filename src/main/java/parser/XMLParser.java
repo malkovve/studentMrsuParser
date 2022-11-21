@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class XMLParser /*implements Parser*/ {
@@ -24,6 +25,19 @@ public class XMLParser /*implements Parser*/ {
             System.out.println(address);
         }
     }
+
+    public void duplicate(File file) {
+        readAddress(file);
+        HashMap<Integer, Address> addressesTemp = new HashMap<>();
+        for (Address address :
+                addresses) {
+            addressesTemp.put(address.getId(), address);
+        }
+        for (int i = 1; i < addresses.size() ; i++) {
+            System.out.println(addressesTemp.get() + " - repeated");
+        }
+        }
+
 
     //     todo дополнить реализацию, это чисто пример
     private void readAddress(File file) {
