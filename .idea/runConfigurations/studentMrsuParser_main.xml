@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="studentMrsuParser.main" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="IDEMain" />
+    <module name="studentMrsuParser.main" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
