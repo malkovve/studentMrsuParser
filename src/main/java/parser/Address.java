@@ -16,6 +16,7 @@ public class Address {
         this.street = street;
         this.house = house;
         this.floor = floor;
+        this.flatNumber = flatNumber;
     }
 
     @Override
