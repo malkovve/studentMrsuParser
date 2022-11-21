@@ -13,4 +13,7 @@ public class Client {
         this.address = address;
     }
 
+    public String toString() {
+        return name + " " + personalNumber + " " + address;
+    }
 }

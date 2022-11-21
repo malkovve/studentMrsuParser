@@ -1,4 +1,4 @@
-package parser;
+/*package parser;
 
 import javax.xml.stream.XMLStreamException;
 import java.io.File;
@@ -9,5 +9,5 @@ public interface Parser {
 
     }
 }
-
+*/
 

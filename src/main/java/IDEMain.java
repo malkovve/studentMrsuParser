@@ -7,6 +7,5 @@ public class IDEMain {
         XMLParser xmlParser = new XMLParser();
         xmlParser.parse(new File("address.xml"));
         xmlParser.parse(new File("client.xml"));
-
     }
 }

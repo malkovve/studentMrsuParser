@@ -10,18 +10,23 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class XMLParser implements Parser {
-    private ArrayList<Address> addresses;
-    private ArrayList<Client> clients;
+public class XMLParser /*implements Parser*/ {
+    private ArrayList<Address> addresses = new ArrayList<>();
+    private ArrayList<Client> clients = new ArrayList<>();
 
-
-    @Override
     public void parse(File file) {
-
+        readAddress(file);
+        if (!clients.isEmpty()) {
+            for (Client client : clients) {
+                System.out.println(client);
+            }
+        } else for (Address address : addresses) {
+            System.out.println(address);
+        }
     }
 
     //     todo дополнить реализацию, это чисто пример
-    private List<?> readAddress(File file) {
+    private void readAddress(File file) {
         XMLInputFactory factory = XMLInputFactory.newInstance();
         XMLStreamReader parser = null;
 
@@ -63,6 +68,5 @@ public class XMLParser implements Parser {
         } catch (XMLStreamException e) {
             System.out.println(e.getMessage());
         }
-        return null;
     }
 }
