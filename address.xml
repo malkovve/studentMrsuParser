@@ -15,4 +15,8 @@
 	<address id="13" city="Emden" street="Heuweg" house="30" floor="30" flatNumber= "54" />
 	<address id="14" city="Eisenach" street="Dorfstrasse" house="23" floor="10" flatNumber= "20" />
 	<address id="15" city="Coburg" street="Schulstrasse" house="69" floor="45" flatNumber= "66" />
+	<address id="16" city="Salzwedel" street="Dorfstrasse" house="39" floor="77" flatNumber= "56" />
+	<address id="17" city="Passau" street="Hauptstrasse" house="86" floor="1" flatNumber= "17" />
+	<address id="18" city="Essen" street="Hauptstrasse" house="6" floor="43" flatNumber= "21" />
+	<address id="19" city="Birkenfeld" street="Blumenweg" house="75" floor="69" flatNumber= "15" />
 </ctRoot>
